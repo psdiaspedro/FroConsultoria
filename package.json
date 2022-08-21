@@ -1,0 +1,22 @@
+{
+  "name": "cgg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psdiaspedro/cgg.git"
+  },
+  "author": "Pedro Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psdiaspedro/cgg/issues"
+  },
+  "homepage": "https://github.com/psdiaspedro/cgg#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

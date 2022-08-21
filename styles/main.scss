@@ -1,0 +1,54 @@
+//Overrides variables (must come before import)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Functions
+@function rem-calc($size) {
+	$value: $size / 16;
+	@return #{$value}rem;
+}
+
+// Colors Pallets
+
+// $dark-gray: #222222;
+// $green: #05E585;
+// $medium-gray: #303030;
+// $light-gray: #9B9B9B;
+// $gray: #525252;
+// $white: #FFFFFF;
+// $black: #000000;
+
+
+//Mobile FIRST
+
+body {
+	background-color: red;
+}
+
+@include media-breakpoint-up(sm) {
+
+	body {
+		background-color: blue;
+	}
+
+}
+
+@include media-breakpoint-up(md) {
+
+	body {
+		background-color: yellow;
+	}
+
+}
+
+@include media-breakpoint-up(lg) {
+	body {
+		background-color: green;
+	}
+}
+
+@include media-breakpoint-up(xxl) {
+	body {
+		background-color: black;
+	}
+}
