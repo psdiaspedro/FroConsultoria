@@ -1,5 +1,8 @@
 //Overrides variables (must come before import)
 
+
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Functions
@@ -8,27 +11,249 @@
 	@return #{$value}rem;
 }
 
-// Colors Pallets
+// Color Pallet
+$black: #202020;
+$white: #F2F2F2;
+$typo-white: #B0B0B0;
+$dark-green: #364D34;
+$light-green: #46CD8D;
 
-// $dark-gray: #222222;
-// $green: #05E585;
-// $medium-gray: #303030;
-// $light-gray: #9B9B9B;
-// $gray: #525252;
-// $white: #FFFFFF;
-// $black: #000000;
 
 
 //Mobile FIRST
 
 body {
-	background-color: red;
+	//background-color: red;
+	font-family: 'Outfit', sans-serif;
 }
+
+h1 {
+	font-size: rem-calc(20);
+	line-height: rem-calc(19.58);
+	color: $dark-green;
+	font-weight: 700;
+}
+
+.border-success {
+	--bs-border-opacity: 1;
+	border-color: $light-green !important;
+}
+
+.border-light {
+	--bs-border-opacity: 1;
+	border-color: $typo-white !important;
+}
+
+.caixa {
+	padding: rem-calc(7) rem-calc(30) ;
+}
+
+.apresentacao {
+
+	h2 {
+		font-size: rem-calc(15);
+		line-height: rem-calc(18.9);
+		color: $dark-green;
+		font-weight: 700;
+		margin-top: rem-calc(50);
+
+		span {
+			color: $light-green;
+		}
+	}
+
+	.img-1 {
+		margin-top: rem-calc(100);
+	}
+
+	.img-2 {
+		margin-top: rem-calc(50);
+	}
+}
+
+.sobre {
+	p {
+		font-size: rem-calc(18);
+		line-height: rem-calc(22.68);
+		color: $typo-white;
+		font-weight: 500;
+
+		span {
+			font-weight: 900;
+			color: $dark-green;
+		}
+	}
+}
+
+.lideranca {
+	h2 {
+		font-size: rem-calc(16);
+		line-height: rem-calc(20.16);
+		color: $dark-green;
+		font-weight: 600;
+	}
+
+	h3 {
+		font-size: rem-calc(20);
+		line-height: rem-calc(25.2);
+		color: $dark-green;
+		font-weight: 900;
+		margin-top: rem-calc(20);
+	}
+
+	p {
+		font-size: rem-calc(16);
+		line-height: rem-calc(20.16);
+		color: $typo-white;
+		font-weight: 700;
+		margin-top: rem-calc(30);
+
+	}
+
+	img {
+		margin-top: rem-calc(40);
+	}
+
+	.mosaico {
+		margin-top: rem-calc(150);
+	}
+
+	.container-lideranca {
+		max-width: 1180px;
+	}
+}
+
+.projetos {
+	h2 {
+		font-size: rem-calc(20);
+		line-height: rem-calc(25.2);
+		color: $typo-white;
+		font-weight: 700;
+
+		.span-1{
+			color: $dark-green;
+		}
+
+		.span-2{
+			color: $light-green;
+		}
+	}
+
+	img {
+		margin-top: rem-calc(150);
+	}
+
+	p {
+		margin-top: rem-calc(50);
+		font-size: rem-calc(18);
+		line-height: rem-calc(22.68);
+		color: $typo-white;
+		font-weight: 700;
+	}
+}
+
+.qualidade {
+	h2 {
+		font-size: rem-calc(20);
+		line-height: rem-calc(25.2);
+		color: $typo-white;
+		font-weight: 700;
+
+		.span-dg {
+			color: $dark-green;
+		}
+
+		.span-lg {
+			color: $light-green;
+		}
+	}
+
+	img {
+		margin-top: rem-calc(150);
+	}
+
+	p {
+		margin-top: rem-calc(50);
+		font-size: rem-calc(18);
+		line-height: rem-calc(22.68);
+		color: $typo-white;
+		font-weight: 700;
+	}
+
+	.text-green {
+		color: $dark-green;
+	}
+}
+
+.atuacao {
+	display: none;
+
+	margin-top: rem-calc(150);
+
+	h2 {
+		font-size: rem-calc(26);
+		line-height: rem-calc(32.76);
+		color: $typo-white;
+		font-weight: 700;
+
+		span {
+			color: $dark-green;
+			font-weight: 900;
+		}
+	}
+
+	p {
+		font-size: rem-calc(20);
+		line-height: rem-calc(25.2);
+		color: $dark-green;
+		font-weight: 600;
+	}
+}
+
+.box-section {
+	display: none;
+
+	margin-top: rem-calc(150);
+
+	h2 {
+		font-size: rem-calc(40);
+		line-height: rem-calc(50.4);
+		color: $light-green;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: rem-calc(16);
+		line-height: rem-calc(20.16);
+		color: $typo-white;
+		font-weight: 700;
+	}
+}
+
+
 
 @include media-breakpoint-up(sm) {
 
 	body {
-		background-color: blue;
+		//background-color: blue;
+	}
+
+	.apresentacao {
+
+		.img-1 {
+			content: url("../assets/sm/1.png");
+		}
+
+		// .img-2 {
+		// 	margin-top: rem-calc(50);
+		// }
+	}
+
+	.qualidade {
+		.gestao {
+			content: url("../assets/sm/gestao.png");
+			max-width: rem-calc(500);
+		}
 	}
 
 }
@@ -36,19 +261,159 @@ body {
 @include media-breakpoint-up(md) {
 
 	body {
-		background-color: yellow;
+		//background-color: yellow;
+	}
+
+	h1 {
+		font-size: rem-calc(40);
+		line-height: rem-calc(48.95);
+	}
+
+	.apresentacao {
+
+		h2 {
+			font-size: rem-calc(26);
+			line-height: rem-calc(32.76);
+		}
+
+		.img-1 {
+			content: url("../assets/md/1.png");
+		}
+	}
+
+	.sobre {
+
+		p {
+			font-size: rem-calc(26);
+			line-height: rem-calc(32.76);
+		}
+	}
+
+	.lideranca {
+		h2 {
+			font-size: rem-calc(26);
+			line-height: rem-calc(32.76);
+		}
+	}
+
+	.projetos {
+		h2 {
+			font-size: rem-calc(40);
+			line-height: rem-calc(50.4);
+		}
+
+		p {
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.2);
+		}
+	}
+
+	.qualidade {
+		p {
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.2);
+		}
+
+		.gestao {
+			content: url("../assets/md/gestao.png");
+			max-width: rem-calc(600);
+		}
+	}
+
+	.atuacao {
+		display: block;
+	}
+
+	.box-section {
+		display: block;
+
+		h2 {
+			font-size: rem-calc(50);
+			line-height: rem-calc(63);
+		}
 	}
 
 }
 
 @include media-breakpoint-up(lg) {
 	body {
-		background-color: green;
+		//background-color: green;
+	}
+
+	h1 {
+		font-size: rem-calc(50);
+		line-height: rem-calc(48.95);
+	}
+
+	.apresentacao {
+
+		h2 {
+			font-size: rem-calc(30);
+			line-height: rem-calc(37.8);
+		}
+
+		.img-1 {
+			content: url("../assets/lg/1.png");
+		}
+	}
+
+	.projetos {
+		h2 {
+			font-size: rem-calc(50);
+			line-height: rem-calc(63);
+		}
+
+		p {
+			font-size: rem-calc(26);
+			line-height: rem-calc(32.76);
+		}
+	}
+
+	.qualidade {
+		p {
+			font-size: rem-calc(26);
+			line-height: rem-calc(32.76);
+		}
+
+		.gestao {
+			content: url("../assets/lg/gestao.png");
+			max-width: rem-calc(750);
+		}
+	}
+
+	.box-section {
+
+		h2 {
+			font-size: rem-calc(70);
+			line-height: rem-calc(88);
+		}
 	}
 }
 
 @include media-breakpoint-up(xxl) {
 	body {
-		background-color: black;
+		//background-color: black;
+	}
+
+	h1 {
+		font-size: rem-calc(70);
+		line-height: rem-calc(68.53);
+	}
+
+	.apresentacao {
+
+		h2 {
+			font-size: rem-calc(36);
+			line-height: rem-calc(45.36);
+		}
+
+		.img-1 {
+			content: url("../assets/xl/1.png");
+		}
+	}
+
+	.gestao {
+		content: url("../assets/xl/gestao.png");
+		max-width: rem-calc(1500);
 	}
 }
