@@ -1,8 +1,5 @@
 //Overrides variables (must come before import)
 
-
-
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Functions
@@ -19,8 +16,17 @@ $dark-green: #364D34;
 $light-green: #46CD8D;
 
 
+.border-success {
+	--bs-border-opacity: 1;
+	border-color: $light-green !important;
+}
 
-//Mobile FIRST
+.border-light {
+	--bs-border-opacity: 1;
+	border-color: $typo-white !important;
+}
+
+//Mobile FIRST - INDEX
 
 body {
 	//background-color: red;
@@ -34,15 +40,64 @@ h1 {
 	font-weight: 700;
 }
 
-.border-success {
-	--bs-border-opacity: 1;
-	border-color: $light-green !important;
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
-.border-light {
-	--bs-border-opacity: 1;
-	border-color: $typo-white !important;
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
 }
+
+aside {
+	background-color: #E9FFF4;;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: -80vw;
+	width: 80vw;
+
+	transition: right 250ms ease-in-out;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+
+	&.open {
+		right: 0;
+	}
+
+	#button-menu-close {
+		margin-top: 30px;
+	}
+
+	a {
+		font-size: rem-calc(20);
+		line-height: rem-calc(25.2);
+		color: $dark-green;
+		font-weight: 600;
+	}
+
+	.menu-item {
+		margin-top: rem-calc(25);
+	}
+
+}
+
+
+header {
+
+	color: $light-green;
+	font-weight: 600;
+
+	.contato {
+		display: none;
+	}
+}
+
 
 .caixa {
 	padding: rem-calc(7) rem-calc(30) ;
@@ -67,7 +122,7 @@ h1 {
 	}
 
 	.img-2 {
-		margin-top: rem-calc(50);
+		margin-top: rem-calc(15);
 	}
 }
 
@@ -77,6 +132,7 @@ h1 {
 		line-height: rem-calc(22.68);
 		color: $typo-white;
 		font-weight: 500;
+		margin-top: rem-calc(100);
 
 		span {
 			font-weight: 900;
@@ -91,6 +147,7 @@ h1 {
 		line-height: rem-calc(20.16);
 		color: $dark-green;
 		font-weight: 600;
+		margin-top: rem-calc(100);
 	}
 
 	h3 {
@@ -107,7 +164,6 @@ h1 {
 		color: $typo-white;
 		font-weight: 700;
 		margin-top: rem-calc(30);
-
 	}
 
 	img {
@@ -121,6 +177,25 @@ h1 {
 	.container-lideranca {
 		max-width: 1180px;
 	}
+
+}
+
+.foco {
+	p {
+		font-size: rem-calc(16);
+		line-height: rem-calc(20.16);
+		color: $typo-white;
+		font-weight: 700;
+		margin-top: rem-calc(30);
+	}
+
+	span {
+		color: $dark-green;
+	}
+
+	img {
+		margin-top: rem-calc(150);
+	}
 }
 
 .projetos {
@@ -129,6 +204,7 @@ h1 {
 		line-height: rem-calc(25.2);
 		color: $typo-white;
 		font-weight: 700;
+		margin-top: rem-calc(100);
 
 		.span-1{
 			color: $dark-green;
@@ -144,11 +220,14 @@ h1 {
 	}
 
 	p {
-		margin-top: rem-calc(50);
 		font-size: rem-calc(18);
 		line-height: rem-calc(22.68);
 		color: $typo-white;
 		font-weight: 700;
+	}
+
+	.texto-projetos {
+		margin-top: rem-calc(50);
 	}
 }
 
@@ -158,6 +237,7 @@ h1 {
 		line-height: rem-calc(25.2);
 		color: $typo-white;
 		font-weight: 700;
+		margin-top: rem-calc(100);
 
 		.span-dg {
 			color: $dark-green;
@@ -169,15 +249,18 @@ h1 {
 	}
 
 	img {
-		margin-top: rem-calc(150);
+		margin-top: rem-calc(100);
 	}
 
 	p {
-		margin-top: rem-calc(50);
 		font-size: rem-calc(18);
 		line-height: rem-calc(22.68);
 		color: $typo-white;
 		font-weight: 700;
+	}
+
+	.text-qual {
+		margin-top: rem-calc(50);
 	}
 
 	.text-green {
@@ -194,7 +277,7 @@ h1 {
 		font-size: rem-calc(26);
 		line-height: rem-calc(32.76);
 		color: $typo-white;
-		font-weight: 700;
+		font-weight: 700;;
 
 		span {
 			color: $dark-green;
@@ -208,6 +291,7 @@ h1 {
 		color: $dark-green;
 		font-weight: 600;
 	}
+
 }
 
 .box-section {
@@ -230,23 +314,167 @@ h1 {
 	}
 }
 
+.fale-conosco {
+	h2 {
+		color: $dark-green;
+		font-size: rem-calc(20);
+		line-height: rem-calc(25.2);
+		font-weight: 700;
+	}
 
+	p {
+		color: $light-green;
+		font-size: rem-calc(20);
+		line-height: rem-calc(28);
+		font-weight: 700;
+		margin-top: rem-calc(20);
+	}
+}
+
+footer {
+	background-color: #E9FFF4;
+
+	span {
+		margin-bottom: rem-calc(20);
+		color: $dark-green;
+	}
+}
+
+//PROJETOS
+
+.intro_projetos {
+	p {
+		font-size: rem-calc(18);
+		line-height: rem-calc(22.68);
+		color: $typo-white;
+		font-weight: 600;
+	}
+}
+
+.maos_dadas, .quero_ser, .reciclarte {
+	h2 {
+
+		font-size: rem-calc(20);
+		line-height: rem-calc(19.58);
+		font-weight: 700;
+		margin-top: rem-calc(100);
+
+		span {
+			color: $light-green;
+		}
+	}
+
+	.img-1 {
+		margin-top: rem-calc(100);
+	}
+
+	.img-2 {
+		margin-top: rem-calc(150);
+	}
+
+	p {
+		font-size: rem-calc(16);
+		line-height: rem-calc(20.16);
+		font-weight: 600;
+		margin-top: rem-calc(100);
+		color: $typo-white;
+	}
+}
+
+//LIDERANÇA
+.pagina-lideranca {
+	.grupo {
+		margin-top: rem-calc(200);
+
+		p {
+			font-size: rem-calc(16);
+			line-height: rem-calc(20.16);
+			font-weight: 700;
+			color: $typo-white;
+		}
+
+		h2 {
+			color: $dark-green;
+			font-weight: 900;
+			font-size: rem-calc(16);
+			line-height: rem-calc(20.16);
+		}
+	}
+}
+
+//SOBRE
+.apresentacao-sobre {
+	p {
+		font-size: rem-calc(16);
+		line-height: rem-calc(20.16);
+		font-weight: 700;
+		margin-top: rem-calc(70);
+		color: $typo-white;
+
+		span {
+			color: $dark-green;
+		}
+	}
+
+}
+
+.vmv {
+	h2 {
+		font-size: rem-calc(30);
+		line-height: rem-calc(37.8);
+		font-weight: 800;
+		color: $dark-green;
+	}
+
+	p {
+		font-size: rem-calc(18);
+		line-height: rem-calc(22.68);
+		font-weight: 700;
+		color: $typo-white;
+	}
+}
+
+.lid-2 {
+	h2 {
+		margin-top: rem-calc(50);
+	}
+}
 
 @include media-breakpoint-up(sm) {
 
-	body {
-		//background-color: blue;
+	header {
+		nav {
+			img {
+				content: url("../assets/header/logo_2.png");
+			}
+		}
+	}
+
+
+	aside {
+		right: -60vw;
+		width: 60vw;
 	}
 
 	.apresentacao {
 
 		.img-1 {
 			content: url("../assets/sm/1.png");
+			margin-top: rem-calc(170);
 		}
 
-		// .img-2 {
-		// 	margin-top: rem-calc(50);
-		// }
+		.img-2 {
+			content: url("../assets/sm/principais_clientes.png");
+			margin-top: rem-calc(30);
+		}
+	}
+
+	.sobre {
+		p {
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.28);
+			margin-top: rem-calc(150);
+		}
 	}
 
 	.qualidade {
@@ -254,19 +482,133 @@ h1 {
 			content: url("../assets/sm/gestao.png");
 			max-width: rem-calc(500);
 		}
+
+		.text-qual {
+			margin-top: rem-calc(100);
+		}
+
+	}
+
+	.lideranca {
+		h2 {
+			margin-top: rem-calc(150);
+		}
+	}
+
+	.foco {
+		p {
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.2);
+		}
+
+		img {
+			margin-top: rem-calc(200);
+			content: url("../assets/sm/2.png");
+		}
+	}
+
+	.projetos {
+		h2 {
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.2);
+			margin-top: rem-calc(150);
+		}
+
+		img {
+			margin-top: rem-calc(200);
+			content: url("../assets/sm/laboratório.png");
+		}
+
+		p {
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.2);
+		}
+
+		.texto-projetos {
+			margin-top: rem-calc(50);
+		}
+	}
+
+	.fale-conosco {
+		margin-top: rem-calc(150);
+
+		h2 {
+			font-size: rem-calc(30);
+			line-height: rem-calc(37.8);
+		}
+
+		p {
+			font-size: rem-calc(30);
+			line-height: rem-calc(42);
+		}
+	}
+
+	//PROJETOS
+
+	.intro_projetos {
+		p {
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.2);
+		}
+	}
+
+	.maos_dadas, .quero_ser, .reciclarte {
+		h2 {
+
+			font-size: rem-calc(40);
+			line-height: rem-calc(39.16);
+			margin-top: rem-calc(150);
+		}
+
+		.img-1 {
+			margin-top: rem-calc(150);
+		}
+
+		.img-2 {
+			margin-top: rem-calc(200);
+		}
+
+		p {
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.2);
+		}
+	}
+
+	//LIDERANÇA
+	.pagina-lideranca {
+		img {
+			max-width: 400px;
+		}
+	}
+
+	.mosaico {
+		content: url("../assets/sm/2.png");
+	}
+
+	.lid-2 {
+		h2 {
+			margin-top: rem-calc(100);
+		}
+	}
+
+	footer {
+
+		span {
+			margin-bottom: rem-calc(0);
+		}
 	}
 
 }
 
 @include media-breakpoint-up(md) {
-
-	body {
-		//background-color: yellow;
-	}
-
 	h1 {
 		font-size: rem-calc(40);
 		line-height: rem-calc(48.95);
+	}
+
+	aside {
+		right: -50vw;
+		width: 50vw;
 	}
 
 	.apresentacao {
@@ -278,14 +620,19 @@ h1 {
 
 		.img-1 {
 			content: url("../assets/md/1.png");
+			margin-top: rem-calc(200);
+		}
+
+		.img-2 {
+			margin-top: rem-calc(30);
 		}
 	}
 
 	.sobre {
-
 		p {
 			font-size: rem-calc(26);
 			line-height: rem-calc(32.76);
+			margin-top: rem-calc(200);
 		}
 	}
 
@@ -293,6 +640,30 @@ h1 {
 		h2 {
 			font-size: rem-calc(26);
 			line-height: rem-calc(32.76);
+			margin-top: rem-calc(250);
+		}
+
+		.l1 {
+			content: url("../assets/md/lider_1.png");
+		}
+
+		.l2 {
+			content: url("../assets/md/lider_2.png");
+		}
+
+		.l3 {
+			content: url("../assets/md/lider_3.png");
+		}
+	}
+
+	.foco {
+		p {
+			font-size: rem-calc(26);
+			line-height: rem-calc(32.76);
+		}
+
+		img {
+			margin-top: rem-calc(250);
 		}
 	}
 
@@ -300,15 +671,35 @@ h1 {
 		h2 {
 			font-size: rem-calc(40);
 			line-height: rem-calc(50.4);
+			margin-top: rem-calc(200);
+
 		}
 
 		p {
 			font-size: rem-calc(20);
 			line-height: rem-calc(25.2);
 		}
+
+		img {
+			margin-top: rem-calc(250);
+			content: url("../assets/md/laboratório.png");
+		}
+
+
+		.texto-projetos {
+			margin-top: rem-calc(100);
+		}
 	}
 
 	.qualidade {
+
+		h2 {
+			font-size: rem-calc(40);
+			line-height: rem-calc(50.4);
+			margin-top: rem-calc(200);
+
+		}
+
 		p {
 			font-size: rem-calc(20);
 			line-height: rem-calc(25.2);
@@ -317,6 +708,10 @@ h1 {
 		.gestao {
 			content: url("../assets/md/gestao.png");
 			max-width: rem-calc(600);
+		}
+
+		img {
+			margin-top: rem-calc(200);
 		}
 	}
 
@@ -333,6 +728,71 @@ h1 {
 		}
 	}
 
+	//PROJETOS
+
+	.intro_projetos {
+		p {
+			font-size: rem-calc(26);
+			line-height: rem-calc(32.76);
+		}
+	}
+
+	.maos_dadas, .quero_ser, .reciclarte {
+		h2 {
+
+			font-size: rem-calc(50);
+			line-height: rem-calc(48.95);
+			margin-top: rem-calc(200);
+		}
+
+		.img-1 {
+			margin-top: rem-calc(200);
+		}
+
+		.img-2 {
+			margin-top: rem-calc(250);
+		}
+
+		p {
+			font-size: rem-calc(26);
+			line-height: rem-calc(32.76);
+		}
+	}
+
+	//LIDERANÇA
+	.pagina-lideranca {
+		.grupo {
+			h2 {
+				font-size: rem-calc(26);
+				line-height: rem-calc(32.76);
+				margin-top: rem-calc(100);
+			}
+		}
+
+		img {
+			max-width: 400px;
+		}
+	}
+
+	//SOBRE
+	.apresentacao-sobre {
+		img {
+			max-width: rem-calc(600);
+		}
+	}
+
+	.vmv {
+		p {
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.2);
+		}
+	}
+
+	.lid-2 {
+		h2 {
+			margin-top: rem-calc(100);
+		}
+	}
 }
 
 @include media-breakpoint-up(lg) {
@@ -345,6 +805,11 @@ h1 {
 		line-height: rem-calc(48.95);
 	}
 
+	aside {
+		right: -40vw;
+		width: 40vw;
+	}
+
 	.apresentacao {
 
 		h2 {
@@ -355,29 +820,85 @@ h1 {
 		.img-1 {
 			content: url("../assets/lg/1.png");
 		}
+
+	}
+
+	.sobre {
+		p {
+			margin-top: rem-calc(250);
+		}
+	}
+
+	.lideranca {
+		h2 {
+			margin-top: rem-calc(300);
+		}
+
+		.l1 {
+			content: url("../assets/lg/lider_1.png");
+		}
+
+		.l2 {
+			content: url("../assets/lg/lider_2.png");
+		}
+
+		.l3 {
+			content: url("../assets/lg/lider_3.png");
+		}
+	}
+
+	.foco {
+		img {
+			margin-top: rem-calc(300);
+			content: url("../assets/md/2.png");
+		}
 	}
 
 	.projetos {
 		h2 {
 			font-size: rem-calc(50);
 			line-height: rem-calc(63);
+			margin-top: rem-calc(250);
 		}
 
 		p {
 			font-size: rem-calc(26);
 			line-height: rem-calc(32.76);
+		}
+
+		img {
+			margin-top: rem-calc(300);
+			content: url("../assets/lg/laboratório.png");
+		}
+
+		.texto-projetos {
+			margin-top: rem-calc(150);
 		}
 	}
 
 	.qualidade {
+		h2 {
+			font-size: rem-calc(50);
+			line-height: rem-calc(63);
+			margin-top: rem-calc(300);
+		}
+
 		p {
 			font-size: rem-calc(26);
 			line-height: rem-calc(32.76);
+		}
+
+		.text-qual {
+			margin-top: rem-calc(200);
 		}
 
 		.gestao {
 			content: url("../assets/lg/gestao.png");
 			max-width: rem-calc(750);
+		}
+
+		img {
+			margin-top: rem-calc(300);
 		}
 	}
 
@@ -386,6 +907,58 @@ h1 {
 		h2 {
 			font-size: rem-calc(70);
 			line-height: rem-calc(88);
+		}
+	}
+
+	//PROJETOS
+	.maos_dadas, .quero_ser, .reciclarte {
+		h2 {
+
+			font-size: rem-calc(70);
+			line-height: rem-calc(68.53);
+			margin-top: rem-calc(250);
+		}
+
+		.img-1 {
+			margin-top: rem-calc(250);
+		}
+
+		.img-2 {
+			margin-top: rem-calc(300);
+		}
+	}
+
+	//LIDERANÇA
+	.pagina-lideranca {
+
+		.grupo {
+			h2 {
+				margin-top: rem-calc(0);
+			}
+		}
+
+		img {
+			max-width: 450px;
+		}
+	}
+
+	//SOBRE
+	.apresentacao-sobre {
+		img {
+			max-width: rem-calc(800);
+		}
+	}
+
+	.vmv {
+		p {
+			font-size: rem-calc(26);
+			line-height: rem-calc(32.76);
+		}
+	}
+
+	.lid-2 {
+		h2 {
+			margin-top: rem-calc(100);
 		}
 	}
 }
@@ -400,6 +973,11 @@ h1 {
 		line-height: rem-calc(68.53);
 	}
 
+	aside {
+		right: -40vw;
+		width: 40vw;
+	}
+
 	.apresentacao {
 
 		h2 {
@@ -410,10 +988,56 @@ h1 {
 		.img-1 {
 			content: url("../assets/xl/1.png");
 		}
+
+		.img-2 {
+			content: url("../assets/lg/principais_clientes.png");
+		}
+	}
+
+	.sobre {
+		p {
+			margin-top: rem-calc(300);
+		}
+	}
+
+	.lideranca {
+		h2 {
+			margin-top: rem-calc(350);
+		}
+	}
+
+	.foco {
+		img {
+			margin-top: rem-calc(350);
+			content: url("../assets/lg/2.png");
+		}
+	}
+
+	.projetos {
+		h2 {
+			margin-top: rem-calc(300);
+		}
+
+		img {
+			margin-top: rem-calc(350);
+			content: url("../assets/xl/laboratório.png");
+		}
 	}
 
 	.gestao {
 		content: url("../assets/xl/gestao.png");
-		max-width: rem-calc(1500);
+	}
+
+	.qualidade {
+		h2 {
+			font-size: rem-calc(70);
+			line-height: rem-calc(88.2);
+		}
+	}
+
+	.lid-2 {
+		h2 {
+			margin-top: rem-calc(100);
+		}
 	}
 }

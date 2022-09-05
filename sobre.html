@@ -11,12 +11,81 @@
 	<link rel="stylesheet" href="./styles/main.min.css">
 </head>
 <body>
+	<!--Header-->
+	<header>
+		<nav>
+			<div class="container">
+				<div class="row row-cols-2">
+					<!-- <div class="col d-flex justify-content-center align-items-center contato">
+						<span class="border border-2 rounded-pill caixa border-success">
+							<a href="">Contato</a>
+						</span>
+					</div> -->
+					<div class="col d-flex justify-content-start align-items-center">
+						<img src="assets/header/logo_3.png" alt="">
+					</div>
+					<div class="col d-flex justify-content-end align-items-center">
+						<span class="border border-2 rounded-pill caixa border-success">
+							<button id="button-menu-open">
+								Menu
+							</button>
+						</span>
+					</div>
+					<div class="col">
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!--aside menu-->
+	<aside>
+		<div class="container text-center">
+			<div class="row row-cols-2">
+				<div class="col">
+					<img src="assets/header/logo.png" alt="">
+				</div>
+				<div class="col">
+					<button id="button-menu-close">
+						<img src="assets/header/exit.png" alt="">
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="container text-center menu-aside">
+			<div class="row row-cols-1">
+				<div class="col menu-item">
+					<a href="">
+						Sobre a Frø
+					</a>
+				</div>
+				<div class="col menu-item">
+					<a href="">
+						Nossas lideranças
+					</a>
+				</div>
+				<div class="col menu-item">
+					<a href="">
+						Como podemos<br>
+						te ajudar?
+					</a>
+				</div>
+				<div class="col menu-item">
+					<a href="">
+						Projetos<br>
+						voluntariados
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+
 	<!--Apresentação-->
-	<section class="p-5 apresentacao">
+	<section class="p-5 apresentacao-sobre">
 		<div class="container-sm">
 			<div class="row row-cols-1 justify-content-center">
 				<div class="col">
-					<img class="img-fluid mx-auto d-block img-2" src="assets/mobile/gestão.png" alt="">
+					<img class="img-fluid mx-auto d-block" src="assets/xl/gestao.png" alt="">
 					<p>
 						A <span>Frø consultoria</span>, tem seu principal foco na
 						Segurança de Alimentos e Gestão da Qualidade,
@@ -34,39 +103,53 @@
 	</section>
 
 	<!--Visão, Missão, Valores-->
-	<section class="p-5 sobre">
+	<section class="p-5 vmv">
 		<div class="container-sm text-center">
-			<div class="row row-cols-1 row-cols-md-2">
-				<div class="col">
-					<h2>VISÃO</h2>
-					<p>
-						Ser empresa reconhecida nacionalmente não só pela qualidade das
-						entregas,  mas também pelos resultados dos nossos clientes
-					</p>
+			<div class="row row-cols-1">
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col">
+						<h2>VISÃO</h2>
+					</div>
+					<div class="col">
+						<p>
+							Ser empresa reconhecida nacionalmente não só pela qualidade das
+							entregas,  mas também pelos resultados dos nossos clientes
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="row row-cols-1 row-cols-md-2">
-				<h2>MISSÃO</h2>
-				<p>
-					Desenvolver projetos de Laboratório e implantar a gestão de Segurança de
-					alimentos e Qualidade  em Processos e Equipes  através de consultoria e
-					treinamento​
-				</p>
-			</div>
-			<div class="row row-cols-1 row-cols-md-2">
-				<h2>VALORES</h2>
-				<p>
-					Ética, cuidado com as pessoas, humildade para aprender e ensinar e uma
-					boa gestão são pilares fundamentais para qualquer empresa de sucesso
-				</p>
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col">
+						<h2>MISSÃO</h2>
+					</div>
+					<div class="col">
+						<p>
+							Desenvolver projetos de Laboratório e implantar a gestão de Segurança de
+							alimentos e Qualidade  em Processos e Equipes  através de consultoria e
+							treinamento​
+						</p>
+					</div>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col">
+						<h2>VALORES</h2>
+					</div>
+					<div class="col">
+						<p>
+							Ética, cuidado com as pessoas, humildade para aprender e ensinar e uma
+							boa gestão são pilares fundamentais para qualquer empresa de sucesso
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<!--Liderança-->
-	<section class="p-5 lideranca ">
-		<h2 class="">Nossa Liderança</h2>
+	<section class="p-5 lideranca lid-2">
 		<div class="container-sm text-center">
+			<h2>
+				<span class="border border-2 rounded-pill caixa border-success">Nossa Liderança</span>
+			</h2>
 			<div class="row row-cols-1 row-cols-md-3 ">
 				<div class="col">
 					<img class="img-fluid mx-auto d-block img-2" src="assets/mobile/lider_1.png" alt="">
@@ -126,9 +209,12 @@
 		<div class="container text-center">
 			<div class="row row-cols-2">
 				<div class="col d-flex align-items-center">
-					<h2>
-						Ajudamos <span>empresas</span> nas seguintes areas!
-					</h2>
+					<div class="text-atua">
+						<h2>
+							Ajudamos <span>empresas</span><br>
+							nas seguintes areas!
+						</h2>
+					</div>
 				</div>
 				<div class="row row-cols-1">
 					<div class="col">
@@ -164,9 +250,48 @@
 		</div>
 	</section>
 
-	<!--Footer-->
-	<section>
+	<!--Fale Conosco-->
+	<section class="p-5 fale-conosco">
+		<div class="container text-center">
+			<div class="row row-cols-1">
+				<div class="col">
+					<h2>Fale conosco!</h2>
+				</div>
+				<div class="col">
+					<p>
+						(12) 98134 - 5445<br>
+						cggisell@icloud.com
+					</p>
+				</div>
+			</div>
+		</div>
 	</section>
+
+	<!--Footer-->
+	<footer>
+		<div class="container-fluid text-center">
+			<div class="row row-cols-1 row-cols-sm-2">
+				<div class="col">
+					<img src="assets/header/logo.png" alt="">
+				</div>
+				<div class="col d-flex justify-content-center align-items-center">
+					<span class="border border-2 rounded-pill caixa border-success">
+						<a href="">Como podemos te ajudar</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		document.querySelector('#button-menu-open').onclick=()=>{
+			document.querySelector('aside').classList.add('open')
+		}
+
+		document.querySelector('#button-menu-close').onclick=()=>{
+			document.querySelector('aside').classList.remove('open')
+		}
+	</script>
 </body>
 </html>
