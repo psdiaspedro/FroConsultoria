@@ -400,6 +400,18 @@ footer {
 			font-size: rem-calc(16);
 			line-height: rem-calc(20.16);
 		}
+
+		h3 {
+			color: $light-green;
+			font-size: rem-calc(16);
+			line-height: rem-calc(20.16);
+			font-weight: 700;
+			margin-top: -10px;
+		}
+
+		.texto-lideres {
+			margin-top: rem-calc(30);
+		}
 	}
 }
 
