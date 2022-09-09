@@ -13,8 +13,8 @@
 <body>
 
 	<!--Header-->
-	<header>
-		<nav>
+	<header id="head">
+		<nav class="p-5">
 			<div class="container">
 				<div class="row row-cols-2">
 					<!-- <div class="col d-flex justify-content-center align-items-center contato">
@@ -23,7 +23,9 @@
 						</span>
 					</div> -->
 					<div class="col d-flex justify-content-start align-items-center">
-						<img src="assets/header/logo_3.png" alt="">
+						<a href="index.html">
+							<img src="assets/header/logo_3.png" alt="">
+						</a>
 					</div>
 					<div class="col d-flex justify-content-end align-items-center">
 						<span class="border border-2 rounded-pill caixa border-success">
@@ -56,23 +58,23 @@
 		<div class="container text-center menu-aside">
 			<div class="row row-cols-1">
 				<div class="col menu-item">
-					<a href="">
+					<a href="sobre.html">
 						Sobre a Frø
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="">
+					<a href="lideres.html">
 						Nossas lideranças
 					</a>
 				</div>
-				<div class="col menu-item">
-					<a href="">
+				<div onClick="document.location='index.html#atua';"" class="col menu-item">
+					<a href="index.html#atua">
 						Como podemos<br>
 						te ajudar?
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="">
+					<a href="projetos.html">
 						Projetos<br>
 						voluntariados
 					</a>
@@ -182,8 +184,12 @@
 				</div>
 				<div class="col">
 					<p>
-						(12) 98134 - 5445<br>
-						cggisell@icloud.com
+						<a href="https://api.whatsapp.com/send?phone=5512981345445">
+							(12) 98134 - 5445<br>
+						</a>
+						<a href="malito:cggisell@icloud.com">
+							cggisell@icloud.com
+						</a>
 					</p>
 				</div>
 			</div>
@@ -195,11 +201,13 @@
 		<div class="container-fluid text-center">
 			<div class="row row-cols-1 row-cols-sm-2">
 				<div class="col">
-					<img src="assets/header/logo.png" alt="">
+					<a href="#head">
+						<img src="assets/header/logo.png" alt="">
+					</a>
 				</div>
 				<div class="col d-flex justify-content-center align-items-center">
 					<span class="border border-2 rounded-pill caixa border-success">
-						<a href="">Como podemos te ajudar</a>
+						<a href="index.html#atua">Como podemos te ajudar</a>
 					</span>
 				</div>
 			</div>

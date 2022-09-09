@@ -13,17 +13,14 @@
 <body>
 
 	<!--Header-->
-	<header>
-		<nav>
+	<header id="head">
+		<nav class="p-5">
 			<div class="container">
 				<div class="row row-cols-2">
-					<!-- <div class="col d-flex justify-content-center align-items-center contato">
-						<span class="border border-2 rounded-pill caixa border-success">
-							<a href="">Contato</a>
-						</span>
-					</div> -->
 					<div class="col d-flex justify-content-start align-items-center">
-						<img src="assets/header/logo_3.png" alt="">
+						<a href="index.html">
+							<img src="assets/header/logo_3.png" alt="">
+						</a>
 					</div>
 					<div class="col d-flex justify-content-end align-items-center">
 						<span class="border border-2 rounded-pill caixa border-success">
@@ -56,23 +53,23 @@
 		<div class="container text-center menu-aside">
 			<div class="row row-cols-1">
 				<div class="col menu-item">
-					<a href="">
+					<a href="sobre.html">
 						Sobre a Frø
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="">
+					<a href="lideres.html">
 						Nossas lideranças
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="">
+					<a href="#atua">
 						Como podemos<br>
 						te ajudar?
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="">
+					<a href="projetos.html">
 						Projetos<br>
 						voluntariados
 					</a>
@@ -288,7 +285,7 @@
 	</section>
 
 	<!--Areas de Atuação-->
-	<section class="p-5 atuacao">
+	<section class="p-5 atuacao" id="atua">
 		<div class="container">
 			<div class="row row-cols-2">
 				<div class="col d-flex justify-content-center align-items-center">
@@ -300,30 +297,38 @@
 				<div class="row row-cols-1">
 					<div class="col d-flex justify-content-center">
 						<p>
-							<span class="border border-2 rounded-pill caixa border-success">
-								Corporativo
-							</span>
+							<a href="#corp">
+								<span class="border border-2 rounded-pill caixa border-success">
+									Corporativo
+								</span>
+							</a>
 						</p>
 					</div>
 					<div class="col d-flex justify-content-center mt-4">
 						<p>
-							<span class="border border-2 rounded-pill caixa border-success">
-								Produção
-							</span>
+							<a href="#prod">
+								<span class="border border-2 rounded-pill caixa border-success">
+									Produção
+								</span>
+							</a>
 						</p>
 					</div>
 					<div class="col d-flex justify-content-center mt-4">
 						<p>
-							<span class="border border-2 rounded-pill caixa border-success">
-								Laboratório
-							</span>
+							<a href="#lab">
+								<span class="border border-2 rounded-pill caixa border-success">
+									Laboratório
+								</span>
+							</a>
 						</p>
 					</div>
 					<div class="col d-flex justify-content-center mt-4">
 						<p>
-							<span class="border border-2 rounded-pill caixa border-success">
-								Pesquisa
-							</span>
+							<a href="#pesq">
+								<span class="border border-2 rounded-pill caixa border-success">
+									Pesquisa
+								</span>
+							</a>
 						</p>
 					</div>
 				</div>
@@ -332,7 +337,7 @@
 	</section>
 
 	<!--Corporativo-->
-	<section class="p-5 box-section">
+	<section class="p-5 box-section" id="corp">
 		<div class="container text-center">
 			<h2>Corporativo</h2>
 			<div class="row mt-5">
@@ -390,7 +395,7 @@
 	</section>
 
 	<!--Produção-->
-	<section class="p-5 box-section">
+	<section class="p-5 box-section" id="prod">
 		<div class="container text-center">
 			<h2>Produção</h2>
 			<div class="row mt-5 g-0">
@@ -440,7 +445,7 @@
 	</section>
 
 	<!--Laboratórios-->
-	<section class="p-5 box-section">
+	<section class="p-5 box-section" id="lab">
 		<div class="container text-center">
 			<h2>Laboratórios</h2>
 			<div class="row mt-5">
@@ -505,7 +510,7 @@
 	</section>
 
 	<!--Pesquisa-->
-	<section class="p-5 box-section">
+	<section class="p-5 box-section" id="pesq">
 		<div class="container text-center">
 			<h2>Pesquisa e Desenvolvimento​</h2>
 			<div class="row mt-5">
@@ -578,8 +583,12 @@
 				</div>
 				<div class="col">
 					<p>
-						(12) 98134 - 5445<br>
-						cggisell@icloud.com
+						<a href="https://api.whatsapp.com/send?phone=5512981345445">
+							(12) 98134 - 5445<br>
+						</a>
+						<a href="malito:cggisell@icloud.com">
+							cggisell@icloud.com
+						</a>
 					</p>
 				</div>
 			</div>
@@ -591,11 +600,13 @@
 		<div class="container-fluid text-center">
 			<div class="row row-cols-1 row-cols-sm-2">
 				<div class="col">
-					<img src="assets/header/logo.png" alt="">
+					<a href="#head">
+						<img src="assets/header/logo.png" alt="">
+					</a>
 				</div>
 				<div class="col d-flex justify-content-center align-items-center">
 					<span class="border border-2 rounded-pill caixa border-success">
-						<a href="">Como podemos te ajudar</a>
+						<a href="#atua">Como podemos te ajudar</a>
 					</span>
 				</div>
 			</div>
