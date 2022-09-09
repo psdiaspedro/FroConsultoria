@@ -197,6 +197,7 @@ header {
 	img {
 		margin-top: rem-calc(150);
 	}
+
 }
 
 .projetos {
@@ -679,6 +680,10 @@ footer {
 		img {
 			margin-top: rem-calc(250);
 		}
+
+		.texto-foco {
+			margin-top: rem-calc(200);
+		}
 	}
 
 	.projetos {
@@ -872,6 +877,10 @@ footer {
 			margin-top: rem-calc(300);
 			content: url("../assets/md/2.png");
 		}
+
+		.texto-foco {
+			margin-top: rem-calc(250);
+		}
 	}
 
 	.projetos {
@@ -1031,7 +1040,13 @@ footer {
 			margin-top: rem-calc(350);
 			content: url("../assets/lg/2.png");
 		}
+
+		.texto-foco {
+			margin-top: rem-calc(300);
+		}
 	}
+
+
 
 	.projetos {
 		h2 {
