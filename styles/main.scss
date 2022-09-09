@@ -385,7 +385,7 @@ footer {
 //LIDERANÇA
 .pagina-lideranca {
 	.grupo {
-		margin-top: rem-calc(200);
+		margin-top: rem-calc(60);
 
 		p {
 			font-size: rem-calc(16);
@@ -397,8 +397,9 @@ footer {
 		h2 {
 			color: $dark-green;
 			font-weight: 900;
-			font-size: rem-calc(16);
-			line-height: rem-calc(20.16);
+			font-size: rem-calc(20);
+			line-height: rem-calc(25.2);
+			margin-top: rem-calc(50);
 		}
 
 		h3 {
