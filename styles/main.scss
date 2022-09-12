@@ -85,6 +85,10 @@ aside {
 		margin-top: rem-calc(25);
 	}
 
+	.como-podemos-ajudar {
+		display: none;
+	}
+
 }
 
 
@@ -624,6 +628,10 @@ footer {
 	aside {
 		right: -50vw;
 		width: 50vw;
+
+		.como-podemos-ajudar {
+			display: block;
+		}
 	}
 
 	.apresentacao {
