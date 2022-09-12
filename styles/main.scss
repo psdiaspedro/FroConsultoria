@@ -337,14 +337,7 @@ header {
 	}
 }
 
-footer {
-	background-color: #E9FFF4;
 
-	span {
-		margin-bottom: rem-calc(20);
-		color: $dark-green;
-	}
-}
 
 //PROJETOS
 
@@ -359,25 +352,25 @@ footer {
 
 .maos_dadas, .quero_ser, .reciclarte {
 	h2 {
-
+		
 		font-size: rem-calc(20);
 		line-height: rem-calc(19.58);
 		font-weight: 700;
 		margin-top: rem-calc(100);
-
+		
 		span {
 			color: $light-green;
 		}
 	}
-
+	
 	.img-1 {
 		margin-top: rem-calc(100);
 	}
-
+	
 	.img-2 {
 		margin-top: rem-calc(150);
 	}
-
+	
 	p {
 		font-size: rem-calc(16);
 		line-height: rem-calc(20.16);
@@ -391,7 +384,7 @@ footer {
 .pagina-lideranca {
 	.grupo {
 		margin-top: rem-calc(60);
-
+		
 		p {
 			font-size: rem-calc(16);
 			line-height: rem-calc(20.16);
@@ -429,12 +422,12 @@ footer {
 		font-weight: 700;
 		margin-top: rem-calc(70);
 		color: $typo-white;
-
+		
 		span {
 			color: $dark-green;
 		}
 	}
-
+	
 }
 
 .vmv {
@@ -444,7 +437,7 @@ footer {
 		font-weight: 800;
 		color: $dark-green;
 	}
-
+	
 	p {
 		font-size: rem-calc(18);
 		line-height: rem-calc(22.68);
@@ -459,8 +452,20 @@ footer {
 	}
 }
 
-@include media-breakpoint-up(sm) {
+footer {
+	background-color: #E9FFF4;
 
+	span {
+		margin-bottom: rem-calc(20);
+		color: $dark-green;
+		display: none;
+	}
+}
+
+
+
+@include media-breakpoint-up(sm) {
+	
 	header {
 		nav {
 			img {
@@ -824,6 +829,12 @@ footer {
 	.lid-2 {
 		h2 {
 			margin-top: rem-calc(100);
+		}
+	}
+
+	footer {
+		span {
+			display: block;
 		}
 	}
 }
