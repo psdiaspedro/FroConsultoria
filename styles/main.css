@@ -10932,6 +10932,22 @@ textarea.form-control-lg {
   border-color: #B0B0B0 !important;
 }
 
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho-item {
+  margin-left: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.esconde-menu {
+  display: none;
+}
+
 body {
   font-family: "Outfit", sans-serif;
 }
@@ -11021,11 +11037,16 @@ header .contato {
   line-height: 1.4175rem;
   color: #B0B0B0;
   font-weight: 500;
-  margin-top: 6.25rem;
 }
 .sobre p span {
   font-weight: 900;
   color: #364D34;
+}
+.sobre .texto-sobre {
+  margin-top: 6.25rem;
+}
+.sobre .parag-sobre {
+  margin-top: 1.875rem;
 }
 
 .lideranca h2, .lideranca .h2 {
@@ -11120,6 +11141,9 @@ header .contato {
   line-height: 1.4175rem;
   color: #B0B0B0;
   font-weight: 700;
+}
+.qualidade p span {
+  color: #364D34;
 }
 .qualidade .text-qual {
   margin-top: 3.125rem;
@@ -11293,7 +11317,9 @@ footer span {
   .sobre p {
     font-size: 1.25rem;
     line-height: 1.58rem;
-    margin-top: 9.375rem;
+  }
+  .sobre .texto-sobre {
+    margin-top: 6.25rem;
   }
   .qualidade .gestao {
     content: url("../assets/sm/gestao.png");
@@ -11310,7 +11336,7 @@ footer span {
     line-height: 1.575rem;
   }
   .foco img {
-    margin-top: 12.5rem;
+    margin-top: 6.25rem;
     content: url("../assets/sm/2.png");
   }
   .projetos h2, .projetos .h2 {
@@ -11398,7 +11424,9 @@ footer span {
   .sobre p {
     font-size: 1.625rem;
     line-height: 2.0475rem;
-    margin-top: 12.5rem;
+  }
+  .sobre .texto-sobre {
+    margin-top: 6.25rem;
   }
   .lideranca h2, .lideranca .h2 {
     font-size: 1.625rem;
@@ -11414,12 +11442,15 @@ footer span {
   .lideranca .l3 {
     content: url("../assets/md/lider_3.png");
   }
+  .lideranca .l4 {
+    content: url("../assets/md/lider_4.png");
+  }
   .foco p {
     font-size: 1.625rem;
     line-height: 2.0475rem;
   }
   .foco img {
-    margin-top: 15.625rem;
+    margin-top: 9.375rem;
   }
   .foco .texto-foco {
     margin-top: 12.5rem;
@@ -11512,6 +11543,12 @@ footer span {
   }
 }
 @media (min-width: 992px) {
+  .esconde-menu {
+    display: block;
+  }
+  nav .aparece-menu {
+    display: none;
+  }
   h1, .h1 {
     font-size: 3.125rem;
     line-height: 3.059375rem;
@@ -11527,8 +11564,8 @@ footer span {
   .apresentacao .img-1 {
     content: url("../assets/lg/1.png");
   }
-  .sobre p {
-    margin-top: 15.625rem;
+  .sobre .texto-sobre {
+    margin-top: 6.25rem;
   }
   .lideranca h2, .lideranca .h2 {
     margin-top: 18.75rem;
@@ -11542,12 +11579,15 @@ footer span {
   .lideranca .l3 {
     content: url("../assets/lg/lider_3.png");
   }
+  .lideranca .l4 {
+    content: url("../assets/lg/lider_4.png");
+  }
   .foco img {
-    margin-top: 18.75rem;
+    margin-top: 9.375rem;
     content: url("../assets/md/2.png");
   }
   .foco .texto-foco {
-    margin-top: 15.625rem;
+    margin-top: 9.375rem;
   }
   .projetos h2, .projetos .h2 {
     font-size: 3.125rem;
@@ -11635,18 +11675,18 @@ footer span {
   .apresentacao .img-2 {
     content: url("../assets/lg/principais_clientes.png");
   }
-  .sobre p {
-    margin-top: 18.75rem;
+  .sobre .texto-sobre {
+    margin-top: 9.375rem;
   }
   .lideranca h2, .lideranca .h2 {
     margin-top: 21.875rem;
   }
   .foco img {
-    margin-top: 21.875rem;
+    margin-top: 12.5rem;
     content: url("../assets/lg/2.png");
   }
   .foco .texto-foco {
-    margin-top: 18.75rem;
+    margin-top: 9.375rem;
   }
   .projetos h2, .projetos .h2 {
     margin-top: 18.75rem;

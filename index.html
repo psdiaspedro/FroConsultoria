@@ -16,25 +16,34 @@
 </head>
 <body>
 	<!--Header-->
-	<header id="head">
-		<nav class="p-5">
-			<div class="container">
-				<div class="row row-cols-2">
-					<div class="col d-flex justify-content-start align-items-center">
-						<a href="index.html">
-							<img src="assets/header/logo_3.png" alt="">
-						</a>
-					</div>
-					<div class="col d-flex justify-content-end align-items-center">
-						<span class="border border-2 rounded-pill caixa border-success">
-							<button id="button-menu-open">
-								Menu
-							</button>
-						</span>
-					</div>
-					<div class="col">
-					</div>
-				</div>
+	<header id="head" class="container cabecalho">
+		<div class="col d-flex justify-content-start align-items-center">
+			<a href="index.html">
+				<img src="assets/header/logo_2.png" alt="">
+			</a>
+		</div>
+		<nav class="p-5 cabecalho-menu">
+			<div class="col d-flex justify-content-end align-items-center">
+				<span class="border border-2 rounded-pill caixa border-success aparece-menu">
+					<button id="button-menu-open">
+						Menu
+					</button>
+				</span>
+			</div>
+			<div class="esconde-menu">
+				<a href="sobre.html" class="cabecalho-item">
+						Sobre a Fro
+				</a>
+				<a href="#atua" class="cabecalho-item">
+
+						Como podemos te ajudar?
+				</a>
+				<a href="lideres.html" class="cabecalho-item">
+						Colaboradores
+				</a>
+				<a href="projetos.html" class="cabecalho-item">
+						Projetos voluntariados
+				</a>
 			</div>
 		</nav>
 	</header>
@@ -62,7 +71,7 @@
 				</div>
 				<div class="col menu-item">
 					<a href="lideres.html">
-						Nossas lideranças
+						Colaboradores
 					</a>
 				</div>
 				<div class="col menu-item como-podemos-ajudar">
@@ -87,7 +96,7 @@
 			<div class="row row-cols-1 justify-content-center">
 				<div class="col">
 					<h1 class="text-center">
-						Consultoria de Segurança<br> de Alimentos e Qualidade
+						Consultoria em Segurança<br> de Alimentos e Qualidade
 					</h1>
 					<img class="img-fluid mx-auto d-block img-1" src="assets/mobile/1.png" alt="">
 					<h2 class="text-center">
@@ -103,12 +112,25 @@
 	<section class="p-5 sobre">
 		<div class="container-sm">
 			<div class="row">
-				<div class="col">
-					<p class="text-center">
-						<span>Frø consultoria</span> é uma empresa dedicada à implementação,
-						treinamento e auditoria na área de Segurança de Alimentos e
-						Gestão da Qualidade especializada em Processos Fabris e
-						Pesquisa e Desenvolvimento​ (R&D)​
+				<div class="col text-center">
+					<p class="texto-sobre">
+						<p >
+							<span>Frø consultoria</span> é uma empresa especializada em 
+							Laboratórios e Indústrias de Alimentos, com atuação no Brasil e 
+							no Exterior.
+						</p>
+						<p class="parag-sobre">
+							Nosso time conta com mais de 100 anos de experiência, entregando, 
+							para nosso cliente, um pacote completo que vai desde o projeto do 
+							Laboratório, passando pelo treinamento da equipe contratada, 
+							elaboração de procedimentos, avaliação de especificações,   
+							suporte na aquisição de equipamentos, implantação de gestão 
+							de Segurança de Alimentos e Qualidade, e por fim auditorias 
+							voltadas para uma eventual certificação.
+						</p>
+						<p class="parag-sobre">
+							O time conta com consultores certificados na FSSC 22000 e ISO 17025 
+						</p>
 					</p>
 				</div>
 			</div>
@@ -120,39 +142,43 @@
 		<div class="container-sm text-center">
 			<a href="lideres.html">
 				<h2>
-					<span class="border border-2 rounded-pill caixa border-success">Nossa Liderança</span>
+					<span class="border border-2 rounded-pill caixa border-success">Saiba mais sobre a experiência do nosso time</span>
 				</h2>
 			</a>
-			<div class="row row-cols-1 row-cols-md-3 ">
+			<div class="row row-cols-1 row-cols-md-2 ">
 				<div class="col">
 					<img class="img-fluid mx-auto d-block l1" src="assets/mobile/lider_1.png" alt="">
 					<h3>
 						Giselle Perez
 					</h3>
 					<p>
-						26 anos atuando na Ambev nas áreas de Qualidade (20 anos)
-						e Inovação (6 anos).​
+						Sócia Diretora
 					</p>
 					<p>
-						Gerente do Laboratório Central - responsável pela Gestão
-						de todos os Laboratórios das Fábricas da América Latina
-						(Cervejas, Refrigerantes e NANCs – Bebidas Não Alcoólicas
-						Não Carbonatadas)
+						Especialista em projetos de Laboratório e Gestão/ Auditorias de 
+						Qualidade e Segurança de Alimentos.
+					</p>
+					<p>
+						Mais de 29 anos de experiência na Indústria Alimentícia, 
+						projetando, gerenciando Laboratórios Corporativos e auditando 
+						fábricas no Brasil e exterior
 					</p>
 				</div>
 				<div class="col">
 					<img class="img-fluid mx-auto d-block l2" src="assets/mobile/lider_2.png" alt="">
 					<h3>
-						Maria Goretti V. Ferreira
+						Maria Goretti Valente
 					</h3>
 					<p>
-						30 anos trabalhando nas áreas de Microbiologia e
-						Qualidade​.
+						Consultora
 					</p>
 					<p>
-						Especialista do Laboratório Central - responsável pelo
-						treinamento de Técnicos, Assepsistas e Microbiologistas
-						nas plantas da América Latina.​
+						Especialista em Microbiologia de Alimentos.
+					</p>
+					<p>
+						Mais de 35 anos de experiência na Indústria Alimentícia, 
+						realizando treinamento de equipes e auditorias em fábricas 
+						na América Latina.
 					</p>
 				</div>
 				<div class="col">
@@ -161,13 +187,35 @@
 						Marlene Hernandes
 					</h3>
 					<p>
-						Mais de 30 de experiência em análise Phys Chem e GC/HPLC​.
+						Consultora
 					</p>
 					<p>
-						Coordenador Corporativo de Qualidade na Antarctica, Cintra, Ambev,
-						Brasil Kirin e Heineken – Responsável pelo treinamento de Técnicos,
-						Operadores, Supervisores e gerentes de plantas de todos os sites da
-						América Latina.​
+						Especialista em Gestão e Análises Físico Químicas
+					</p>
+					<p>
+						Mais de 30 anos de experiência na área de Qualidade na 
+						indústria de bebidas, gerenciando e treinando equipes em 
+						fábricas da América Latina de grandes empresas
+					</p>
+				</div>
+				<div class="col">
+					<img class="img-fluid mx-auto d-block l4" src="assets/mobile/lider_4.png" alt="">
+					<h3>
+						Bianca Gonçalves Moreira
+					</h3>
+					<p>
+						Consultora
+					</p>
+					<p>
+						Especialista em Gestão de Qualidade em Bebidas e Vidros
+					</p>
+					<p>
+						23 anos de experiência atuando na implantação de programas de 
+						Excelência em Qualidade (ISO 9001:2000 ) em Laboratórios estratégicos 
+						na área Físico Química.
+					</p>
+					<p>
+						Auditora de Qualidade, Segurança de Alimentos e Especificações Legais
 					</p>
 				</div>
 			</div>
@@ -179,12 +227,11 @@
 		<div class="container text-center">
 			<div class="texto-foco">
 				<p>
-					Nosso foco é em <span>Segurança de Alimentos</span> e
-					<span>Gestão da Qualidade</span>, atuando em diferentes
-					segmentos da área
-					industrial e de Inovação/R&D através da implementação,
-					treinamento e auditorias, dentre outras atividades como
-					projetos de laboratórios.
+					O foco no <span>monitoramento do Processo fabril</span> é fundamental 
+					para a garantia da Qualidade e 
+					Segurança de Alimentos do produto final em diferentes segmentos da 
+					<span>área Industrial e de Inovação</span>, e deve ser realizado  através  do bom planejamento de Laboratório, da 
+					implementação de programas de Gestão, treinamento e auditorias.
 				</p>
 				<p>
 					O time conta com consultores certificados na
@@ -247,22 +294,22 @@
 			<div class="row row-cols-1">
 				<div class="col">
 					<h2>
-						<span class="span-dg">Gestão</span> de <span class="span-lg">qualidade</span>
+						<span class="span-dg">Gestão</span> de <span class="span-lg">Qualidade</span>
 						e<br>
-						<span class="span-dg">segurança de alimentos</span>
+						<span class="span-dg">Segurança de Alimentos</span>
 					</h2>
 					<img class="gestao" class="img-fluid mx-auto d-block" src="assets/mobile/gestao.png" alt="">
 					<div class="text-qual">
 						<p>
-							Risco à saúde do consumidor é uma preocupação real e
+							<span>Risco à saúde</span>do consumidor é uma <span>preocupação real</span>e
 							fundamental para toda indústria alimentícia. A boa gestão da
 							Qualidade e da Segurança de Alimentos garante ao fabricante
 							que um produto com os requisitos básicos de Qualidade para
 							atender o consumidor final.
 						</p>
 						<p>
-							Problemas como recalls, alto índice de reclamações de
-							clientes e falta de padronização do produto podem acarretar
+							Problemas como <span>recalls</span>, alto índice de <span>reclamações de
+							clientes</span> e falta de padronização do produto podem acarretar
 							danos de imagem tendo como consequência graves perdas de
 							mercado e podem ser mitigados com a implantação dos sistemas
 							de gestão . Retrabalho e desperdício de material, dois itens
@@ -270,8 +317,8 @@
 							estão associados à uma gestão pouco eficiente da Qualidade.​
 						</p>
 						<p>
-							Através do nosso time de especialistas, com vasta  experiência
-							na área, realizamos auditorias e também implantamos estes
+							Através do nosso <span>time de especialistas</span>, com vasta  experiência
+							na área, <span>realizamos auditorias</span> e também implantamos estes
 							programas de forma organizada, atendendo as normas
 							internacionais relacionadas a Segurança de Alimentos e
 							Qualidade, reduzindo o tempo de dedicação da sua equipe para
