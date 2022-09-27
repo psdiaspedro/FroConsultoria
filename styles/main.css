@@ -11299,7 +11299,7 @@ footer span {
 }
 
 @media (min-width: 576px) {
-  header nav img {
+  header nav .logo {
     content: url("../assets/header/logo_2.png");
   }
   aside {

@@ -17,7 +17,7 @@
 	<header id="head" class="container cabecalho">
 		<div class="col d-flex justify-content-start align-items-center">
 			<a href="index.html">
-				<img src="assets/header/logo_2.png" alt="">
+				<img class="logo" src="assets/header/logo_2.png" alt="">
 			</a>
 		</div>
 		<nav class="p-5 cabecalho-menu">
@@ -29,19 +29,25 @@
 				</span>
 			</div>
 			<div class="esconde-menu">
-				<a href="sobre.html" class="cabecalho-item">
-						Sobre a Fro
-				</a>
-				<a href="index.html#proj" class="cabecalho-item">
+				<a href="sobre.html" class="cabecalho-item" data-i18n="menu1">
+					Sobre a FrØ
+			</a>
+			<a href="index.html#proj" class="cabecalho-item" data-i18n="menu2">
 
-						Como podemos te ajudar?
-				</a>
-				<a href="lideres.html" class="cabecalho-item">
-						Colaboradores
-				</a>
-				<a href="projetos.html" class="cabecalho-item">
-						Projetos voluntariados
-				</a>
+					Como podemos te ajudar?
+			</a>
+			<a href="lideres.html" class="cabecalho-item" data-i18n="menu3">
+					Colaboradores
+			</a>
+			<a href="projetos.html" class="cabecalho-item" data-i18n="menu4">
+					Projetos voluntariados
+			</a>
+			<button id="button-language" data-lang="pt-br" class="cabecalho-item">
+				<img src="assets/flags/brazil .png" alt="" data-lang="pt-br">
+			</button>
+			<button id="button-language" data-lang="en-us" class="cabecalho-item">
+				<img src="assets/flags/united-states-of-america .png" alt="" data-lang="en-us" >
+			</button> 
 			</div>
 		</nav>
 	</header>
@@ -60,29 +66,37 @@
 				</div>
 			</div>
 		</div>
-		<div class="container text-center menu-aside">
-			<div class="row row-cols-1">
-				<div class="col menu-item">
-					<a href="sobre.html">
+		<div class="container menu-aside">
+			<div class="row row-cols-1 text-center">
+				<div class="col  menu-item">
+					<a href="sobre.html" data-i18n="menu1">
 						Sobre a Frø
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="lideres.html">
+					<a href="lideres.html" data-i18n="menu3">
 						Colaboradores
 					</a>
 				</div>
 				<div class="col menu-item como-podemos-ajudar">
-					<a href="index.html#atua">
-						Como podemos<br>
-						te ajudar?
+					<a href="index.html#proj" data-i18n="menu2">
+						Como podemos te ajudar?
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="projetos.html">
-						Projetos<br>
-						voluntariados
+					<a href="projetos.html" data-i18n="menu4">
+						Projetos voluntariados
 					</a>
+				</div>
+				<div class="col menu-item">
+					<button id="button-language" data-lang="pt-br" class="cabecalho-item">
+						<img src="assets/flags/brazil .png" alt="" data-lang="pt-br">
+					</button>
+				</div>
+				<div class="col menu-item">
+					<button id="button-language" data-lang="en-us" class="cabecalho-item">
+						<img src="assets/flags/united-states-of-america .png" alt="" data-lang="en-us" >
+					</button> 
 				</div>
 			</div>
 		</div>
@@ -96,25 +110,24 @@
 					<div class="row row-cols-1 row-cols-lg-2 grupo">
 						<img class="img-fluid mx-auto d-block" src="assets/xl/lider_1.png" alt="">
 						<div class="col">
-							<h2>
+							<h2 data-i18n="text85">
 								Giselle Perez
 							</h2>
-							<h3>
+							<h3 data-i18n="text86">
 								Sócio Diretor
 							</h3>
 							<div class="texto-lideres">
-								<p>
+								<p data-i18n="text87">
 									Auditor Interno certificado pela SGS em Segurança Alimentar - FSSC 22000 e Laboratório - ISO 17025.
 								</p>
-								<p>
+								<p data-i18n="text88">
 									29 anos atuando na indústria de alimentos nas áreas de Qualidade (22 anos) e Inovação (6 anos).
 								</p>
-								<p>
+								<p data-i18n="text89">
 									Consultor de Qualidade na indústria de Laticínios e Água de Côco
 									Gerente de Laboratório Corporativo- responsável pela Gestão de Laboratórios de Fábricas na América Latina (Cervejas, Refrigerantes e  Bebidas Não Alcoólicas Não Carbonatadas), realizando Auditorias, Treinamento de Equipes, implementando o sistema de Gestão, Responsável por projetos dos Laboratórios das novas fábricas/ Greenfields  (Layout, especificação de equipamentos, elaboração de procedimentos de análise, seleção/validação de equipe) Aprovação técnica de novos fornecedores e equipamentos; Gestão de custos (Orçamento Base Zero), Análise Sensorial (Degustação, seleção e treinamento de degustadores).
-
 								</p>
-								<p>
+								<p data-i18n="text90">
 									Gerente da área de prototipagem do Centro de Inovação - responsável pela cervejaria Piloto e pelo Laboratório de Controle de Qualidade de protótipos ( Líquido e embalagem).
 								</p>
 							</div>
@@ -128,23 +141,23 @@
 					<div class="row row-cols-1 row-cols-lg-2 grupo">
 						<img class="img-fluid mx-auto d-block" src="assets/xl/lider_2.png" alt="">
 						<div class="col">
-							<h2>
+							<h2 data-i18n="text91">
 								Maria Goretti Valente
 							</h2>
-							<h3>
+							<h3 data-i18n="text92">
 								Consultora Especialista em Microbiologia de Alimentos e Qualidade
 							</h3>
 							<div class="texto-lideres">
-								<p>
+								<p data-i18n="text93">
 									Responsável pela elaboração e implementação de métodos analíticos na área de Microbiologia, para a Norma Técnica de Procedimentos de Processo/Monitoramento Microbiológico da produção de gêneros alimentícios em geral.
 								</p>
-								<p>
+								<p data-i18n="text94">
 									Responsável pelo treinamento de Técnicos, Profissionais de Assepsia e Microbiologistas em plantas da América Latina, produtoras de cerveja, refrigerante, suco, vinho e demais bebidas não carbonatadas. 
 								</p>
-								<p>
+								<p data-i18n="text95">
 									Responsável pela aprovação técnica de novos fornecedores e equipamentos relacionados a área de Microbiologia.
 								</p>
-								<p>
+								<p data-i18n="text96">
 									Na planta do Rio de Janeiro - Supervisor do Laboratório Microbiológico,
 									responsável pela Qualidade Microbiológica de toda a produção naquele
 									local.​
@@ -157,23 +170,23 @@
 					<div class="row row-cols-1 row-cols-lg-2 grupo">
 						<img class="img-fluid mx-auto d-block" src="assets/xl/lider_3.png" alt="">
 						<div class="col">
-							<h2>
+							<h2 data-i18n="text97">
 								Marlene Hernandes
 							</h2>
-							<h3>
+							<h3 data-i18n="text98">
 								Mais de 30 de experiência em análise físico Química e GC/HPLC
 							</h3>
 							<div class="texto-lideres">
-								<p>
+								<p data-i18n="text99">
 									Mais de 30 de experiência em análise Phys Chem e GC/HPLC​.
 								</p>
-								<p>
+								<p data-i18n="text100">
 									Coordenadora Corporativa de Qualidade em multinacionais produtoras de bebidas. Responsável pelo treinamento de Técnicos, Operadores, Supervisores e gerentes de plantas de todos os sites da América Latina.
 								</p>
-								<p>
+								<p data-i18n="text101">
 									Responsável pela elaboração e implantação de métodos analíticos na área de Físico Química, Procedimentos relacionados a Norma Técnica de Processo, Monitoramento de matéria prima, processo e produto final (Cerveja, Refrigerantes, Sucos e Não Alcoólicos e Não Carbonatados) e confiabilidade das plantas laboratórios.
 								</p>
-								<p>
+								<p data-i18n="text102">
 									Auditor de Segurança e Qualidade Alimentar, responsável também pela sua implementação nas fábricas e novos locais.
 								</p>
 							</div>
@@ -187,29 +200,29 @@
 					<div class="row row-cols-1 row-cols-lg-2 grupo">
 						<img class="img-fluid mx-auto d-block" src="assets/xl/lider_4.png" alt="">
 						<div class="col">
-							<h2>
+							<h2 data-i18n="text103">
 								Bianca Gonçalves Moreira
 							</h2>
-							<h3>
+							<h3 data-i18n="text104">
 								Consultora Especialista em Gestão de Qualidade e Vidros
 							</h3>
 							<div class="texto-lideres">
-								<p>
+								<p data-i18n="text105">
 									23 anos de experiência na área de Qualidade na área de 
 									Alimentos e Vidro com mestrado em Metrologia pela PUC/RJ
 								</p>
-								<p>
+								<p data-i18n="text106">
 									Coordenadora Corporativa da área Físico Química posteriormente 
 									Gerente de Qualidade de fábrica de Vidros Rio de Janeiro. 
 									Responsável pela implantação da Gestão de Qualidade e 
 									treinamento da equipe de Laboratório e Operadores
 								</p>
-								<p>
+								<p data-i18n="text107">
 									Auditora de Qualidade, ISO 9001:2000, Segurança de Alimentos, 
 									Programas de Excelência em Qualidade/  Gestão de Conformidade 
 									com Requisitos e Especificações Legais
 								</p>
-								<p>
+								<p data-i18n="text108">
 									Atuou como líder na implantação de programas de  Gestão dos 
 									Laboratórios Estratégicos nas áreas Físico-Química,
 									Microbiologia, Cromatografia e Embalagens
@@ -229,15 +242,15 @@
 	<section class="p-5 fale-conosco">
 		<div class="container text-center">
 			<div class="row row-cols-1">
-				<div class="col">
-					<h2>Fale conosco!</h2>
-				</div>
+				<h2 data-i18n="text74">
+					Fale conosco!
+				</h2>
 				<div class="col">
 					<p>
-						<a href="https://api.whatsapp.com/send?phone=5512981345445">
+						<a href="https://api.whatsapp.com/send?phone=5512981345445" data-i18n="text75">
 							(12) 98134 - 5445<br>
 						</a>
-						<a href="malito:cggisell@icloud.com">
+						<a href="malito:cggisell@icloud.com" data-i18n="text76">
 							cggisell@icloud.com
 						</a>
 					</p>
@@ -257,7 +270,9 @@
 				</div>
 				<div class="col d-flex justify-content-center align-items-center">
 					<span class="border border-2 rounded-pill caixa border-success">
-						<a href="index.html#atua">Como podemos te ajudar</a>
+						<a href="#atua" data-i18n="text77">
+							Como podemos te ajudar
+						</a>
 					</span>
 				</div>
 			</div>
@@ -266,14 +281,6 @@
 
 
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script>
-		document.querySelector('#button-menu-open').onclick=()=>{
-			document.querySelector('aside').classList.add('open')
-		}
-
-		document.querySelector('#button-menu-close').onclick=()=>{
-			document.querySelector('aside').classList.remove('open')
-		}
-	</script>
+	<script src="/scripts.js"></script>
 </body>
 </html>

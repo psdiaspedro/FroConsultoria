@@ -18,7 +18,7 @@
 	<header id="head" class="container cabecalho">
 		<div class="col d-flex justify-content-start align-items-center">
 			<a href="index.html">
-				<img src="assets/header/logo_2.png" alt="">
+				<img class="logo" src="assets/header/logo_2.png" alt="">
 			</a>
 		</div>
 		<nav class="p-5 cabecalho-menu">
@@ -30,18 +30,25 @@
 				</span>
 			</div>
 			<div class="esconde-menu">
-				<a href="sobre.html" class="cabecalho-item">
-						Sobre a Fro
-				</a>
-				<a href="index.html#proj" class="cabecalho-item">
-						Como podemos te ajudar?
-				</a>
-				<a href="lideres.html" class="cabecalho-item">
-						Colaboradores
-				</a>
-				<a href="projetos.html" class="cabecalho-item">
-						Projetos voluntariados
-				</a>
+				<a href="sobre.html" class="cabecalho-item" data-i18n="menu1">
+					Sobre a FrØ
+			</a>
+			<a href="index.html#proj" class="cabecalho-item" data-i18n="menu2">
+
+					Como podemos te ajudar?
+			</a>
+			<a href="lideres.html" class="cabecalho-item" data-i18n="menu3">
+					Colaboradores
+			</a>
+			<a href="projetos.html" class="cabecalho-item" data-i18n="menu4">
+					Projetos voluntariados
+			</a>
+			<button id="button-language" data-lang="pt-br" class="cabecalho-item">
+				<img src="assets/flags/brazil .png" alt="" data-lang="pt-br">
+			</button>
+			<button id="button-language" data-lang="en-us" class="cabecalho-item">
+				<img src="assets/flags/united-states-of-america .png" alt="" data-lang="en-us" >
+			</button> 
 			</div>
 		</nav>
 	</header>
@@ -60,29 +67,37 @@
 				</div>
 			</div>
 		</div>
-		<div class="container text-center menu-aside">
-			<div class="row row-cols-1">
-				<div class="col menu-item">
-					<a href="sobre.html">
+		<div class="container menu-aside">
+			<div class="row row-cols-1 text-center">
+				<div class="col  menu-item">
+					<a href="sobre.html" data-i18n="menu1">
 						Sobre a Frø
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="lideres.html">
+					<a href="lideres.html" data-i18n="menu3">
 						Colaboradores
 					</a>
 				</div>
-				<div onClick="document.location='index.html#atua';" class="col menu-item como-podemos-ajudar">
-					<a href="index.html#atua">
-						Como podemos<br>
-						te ajudar?
+				<div class="col menu-item como-podemos-ajudar">
+					<a href="index.html#proj" data-i18n="menu2">
+						Como podemos te ajudar?
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="projetos.html">
-						Projetos<br>
-						voluntariados
+					<a href="projetos.html" data-i18n="menu4">
+						Projetos voluntariados
 					</a>
+				</div>
+				<div class="col menu-item">
+					<button id="button-language" data-lang="pt-br" class="cabecalho-item">
+						<img src="assets/flags/brazil .png" alt="" data-lang="pt-br">
+					</button>
+				</div>
+				<div class="col menu-item">
+					<button id="button-language" data-lang="en-us" class="cabecalho-item">
+						<img src="assets/flags/united-states-of-america .png" alt="" data-lang="en-us" >
+					</button> 
 				</div>
 			</div>
 		</div>
@@ -93,16 +108,16 @@
 		<div class="container-sm">
 			<div class="row row-cols-1 justify-content-center">
 				<div class="col text-center">
-					<p>
+					<p data-i18n="text109">
 						Somos uma empresa que acredita que projetos sociais desempenham
 						papel fundamental na transformação de uma sociedade.
 					</p>
-					<p>
+					<p data-i18n="text110">
 						Incentivando o lado Humanitário entre indivíduos, estes projetos
 						colaboram para uma melhor qualidade de vida comunidade trazendo
 						bem estar para quem recebe o benefício e também para que fornece.
 					</p>
-					<p>
+					<p data-i18n="text111">
 						É uma ótima oportunidade para desenvolvermos a nossa Inteligência
 						Emocional por meio do exercício da Empatia.
 					</p>
@@ -116,11 +131,11 @@
 		<div class="container-sm text-center">
 			<div class="row row-cols-1">
 				<div class="col">
-					<h2>
+					<h2 data-i18n="text112">
 						Projeto - <span>De mãos dadas</span>
 					</h2>
 					<img class="img-fluid mx-auto d-block img-1" src="assets/xl/maos_dadas_1.png" alt="">
-					<p>
+					<p data-i18n="text113">
 						Melhorar as condições de vida das pessoas menos favorecidas é o
 						objetivo dos projetos Sociais da Frø Consultoria, contando com um
 						grupo de voluntários para este fim. Ajudamos na melhoria de moradias
@@ -138,11 +153,11 @@
 		<div class="container-sm text-center">
 			<div class="row row-cols-1">
 				<div class="col">
-					<h2>
+					<h2 data-i18n="text114">
 						Projeto - <span>Eu quero ser...</span>
 					</h2>
 					<img class="img-fluid mx-auto d-block img-1" src="assets/xl/quero_ser_1.png" alt="">
-					<p>
+					<p data-i18n="text115">
 						Inspiramos alunos de escolas públicas a trilhar o caminho certo,
 						ajudando a decidir a carreira ideal para o seu perfil e interesses
 						particulares através de palestras com profissionais experientes,
@@ -159,11 +174,11 @@
 		<div class="container-sm text-center">
 			<div class="row row-cols-1">
 				<div class="col">
-					<h2>
+					<h2 data-i18n="text116">
 						Projeto - <span>Reciclarte</span>
 					</h2>
 					<img class="img-fluid mx-auto d-block img-1" src="assets/xl/reciclarte_1.png" alt="">
-					<p>
+					<p data-i18n="text117">
 						Projeto que une sustentabilidade, empreendedorismo e
 						inclusão social, utilizando material reciclado para
 						confecção de material vendável como vasos decorativos,
@@ -173,7 +188,7 @@
 						ajuda na  geração de renda, aumenta a autoestima de idosos,
 						deficientes e pessoas em situação de vulnerabilidade, estimula o
 						convívio dentro da comunidade e contribui para o meio ambiente
-					</p>
+					</p data-i18n="text118">
 					<img class="img-fluid mx-auto d-block img-2" src="assets/xl/reciclarte_2.png" alt="">
 				</div>
 			</div>
@@ -185,14 +200,16 @@
 		<div class="container text-center">
 			<div class="row row-cols-1">
 				<div class="col">
-					<h2>Fale conosco!</h2>
+					<h2 data-i18n="text74">
+						Fale conosco!
+					</h2>
 				</div>
 				<div class="col">
 					<p>
-						<a href="https://api.whatsapp.com/send?phone=5512981345445">
+						<a href="https://api.whatsapp.com/send?phone=5512981345445" data-i18n="text75">
 							(12) 98134 - 5445<br>
 						</a>
-						<a href="malito:cggisell@icloud.com">
+						<a href="malito:cggisell@icloud.com" data-i18n="text76">
 							cggisell@icloud.com
 						</a>
 					</p>
@@ -212,7 +229,9 @@
 				</div>
 				<div class="col d-flex justify-content-center align-items-center">
 					<span class="border border-2 rounded-pill caixa border-success">
-						<a href="index.html#atua">Como podemos te ajudar</a>
+						<a href="#atua" data-i18n="text77">
+							Como podemos te ajudar
+						</a>
 					</span>
 				</div>
 			</div>
@@ -220,14 +239,6 @@
 	</footer>
 
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script>
-		document.querySelector('#button-menu-open').onclick=()=>{
-			document.querySelector('aside').classList.add('open')
-		}
-
-		document.querySelector('#button-menu-close').onclick=()=>{
-			document.querySelector('aside').classList.remove('open')
-		}
-	</script>
+	<script src="/scripts.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@
 	<header id="head" class="container cabecalho">
 		<div class="col d-flex justify-content-start align-items-center">
 			<a href="index.html">
-				<img src="assets/header/logo_2.png" alt="">
+				<img class="logo" src="assets/header/logo_2.png" alt="">
 			</a>
 		</div>
 		<nav class="p-5 cabecalho-menu">
@@ -29,19 +29,25 @@
 				</span>
 			</div>
 			<div class="esconde-menu">
-				<a href="sobre.html" class="cabecalho-item">
-						Sobre a Fro
-				</a>
-				<a href="index.html#proj" class="cabecalho-item">
+				<a href="sobre.html" class="cabecalho-item" data-i18n="menu1">
+					Sobre a FrØ
+			</a>
+			<a href="index.html#proj" class="cabecalho-item" data-i18n="menu2">
 
-						Como podemos te ajudar?
-				</a>
-				<a href="lideres.html" class="cabecalho-item">
-						Colaboradores
-				</a>
-				<a href="projetos.html" class="cabecalho-item">
-						Projetos voluntariados
-				</a>
+					Como podemos te ajudar?
+			</a>
+			<a href="lideres.html" class="cabecalho-item" data-i18n="menu3">
+					Colaboradores
+			</a>
+			<a href="projetos.html" class="cabecalho-item" data-i18n="menu4">
+					Projetos voluntariados
+			</a>
+			<button id="button-language" data-lang="pt-br" class="cabecalho-item">
+				<img src="assets/flags/brazil .png" alt="" data-lang="pt-br">
+			</button>
+			<button id="button-language" data-lang="en-us" class="cabecalho-item">
+				<img src="assets/flags/united-states-of-america .png" alt="" data-lang="en-us" >
+			</button> 
 			</div>
 		</nav>
 	</header>
@@ -60,29 +66,37 @@
 				</div>
 			</div>
 		</div>
-		<div class="container text-center menu-aside">
-			<div class="row row-cols-1">
-				<div class="col menu-item">
-					<a href="sobre.html">
+		<div class="container menu-aside">
+			<div class="row row-cols-1 text-center">
+				<div class="col  menu-item">
+					<a href="sobre.html" data-i18n="menu1">
 						Sobre a Frø
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="lideres.html">
+					<a href="lideres.html" data-i18n="menu3">
 						Colaboradores
 					</a>
 				</div>
 				<div class="col menu-item como-podemos-ajudar">
-					<a href="index.html#atua">
-						Como podemos<br>
-						te ajudar?
+					<a href="index.html#proj" data-i18n="menu2">
+						Como podemos te ajudar?
 					</a>
 				</div>
 				<div class="col menu-item">
-					<a href="projetos.html">
-						Projetos<br>
-						voluntariados
+					<a href="projetos.html" data-i18n="menu4">
+						Projetos voluntariados
 					</a>
+				</div>
+				<div class="col menu-item">
+					<button id="button-language" data-lang="pt-br" class="cabecalho-item">
+						<img src="assets/flags/brazil .png" alt="" data-lang="pt-br">
+					</button>
+				</div>
+				<div class="col menu-item">
+					<button id="button-language" data-lang="en-us" class="cabecalho-item">
+						<img src="assets/flags/united-states-of-america .png" alt="" data-lang="en-us" >
+					</button> 
 				</div>
 			</div>
 		</div>
@@ -94,7 +108,7 @@
 			<div class="row row-cols-1 justify-content-center">
 				<div class="col">
 					<img class="img-fluid mx-auto d-block" src="assets/xl/gestao.png" alt="">
-					<p>
+					<p data-i18n="text78">
 						A <span>Frø consultoria</span>, tem seu principal foco na
 						Segurança de Alimentos e Gestão da Qualidade,
 						atuando em diferentes segmentos da área
@@ -116,10 +130,12 @@
 			<div class="row row-cols-1">
 				<div class="row row-cols-1 row-cols-md-2">
 					<div class="col">
-						<h2>VISÃO</h2>
+						<h2 data-i18n="text79">
+							VISÃO
+						</h2>
 					</div>
 					<div class="col text-start m">
-						<p>
+						<p data-i18n="text80">
 							Ser empresa reconhecida nacionalmente não só pela qualidade das
 							entregas,  mas também pelos resultados dos nossos clientes
 						</p>
@@ -127,10 +143,12 @@
 				</div>
 				<div class="row row-cols-1 row-cols-md-2">
 					<div class="col">
-						<h2>MISSÃO</h2>
+						<h2 data-i18n="text81">
+							MISSÃO
+						</h2>
 					</div>
 					<div class="col text-start">
-						<p>
+						<p data-i18n="text82">
 							Desenvolver projetos de Laboratório e implantar a gestão de Segurança de
 							alimentos e Qualidade  em Processos e Equipes  através de consultoria e
 							treinamento​
@@ -139,10 +157,12 @@
 				</div>
 				<div class="row row-cols-1 row-cols-md-2">
 					<div class="col">
-						<h2>VALORES</h2>
+						<h2 data-i18n="text83">
+							VALORES
+						</h2>
 					</div>
 					<div class="col text-start">
-						<p>
+						<p data-i18n="text84">
 							Ética, cuidado com as pessoas, humildade para aprender e ensinar e uma
 							boa gestão são pilares fundamentais para qualquer empresa de sucesso
 						</p>
@@ -156,60 +176,61 @@
 	<section class="p-5 lideranca lid-2">
 		<div class="container-sm text-center">
 			<a href="lideres.html">
-				<h2>
+				<h2 data-i18n="text6">
 					<span class="border border-2 rounded-pill caixa border-success">
 						Saiba mais sobre a experiência do nosso time
 					</span>
 				</h2>
 			</a>
-			<div class="row row-cols-1 row-cols-md-3 ">
+			<div class="row row-cols-1 row-cols-md-2 ">
 				<div class="col">
 					<img class="img-fluid mx-auto d-block img-2" src="assets/mobile/lider_1.png" alt="">
-					<h3>
+					<h3 data-i18n="text7">
 						Giselle Perez
 					</h3>
-					<p>
-						26 anos atuando na Ambev nas áreas de Qualidade (20 anos)
-						e Inovação (6 anos).​
+					<p data-i18n="text8">
+						Especialista em projetos de Laboratório e Gestão/ Auditorias de Qualidade e Segurança de Alimentos.
 					</p>
-					<p>
-						Gerente do Laboratório Central - responsável pela Gestão
-						de todos os Laboratórios das Fábricas da América Latina
-						(Cervejas, Refrigerantes e NANCs – Bebidas Não Alcoólicas
-						Não Carbonatadas)
+					<p data-i18n="text9">
+						Mais de 29 anos de experiência na Indústria Alimentícia, projetando, gerenciando Laboratórios Corporativos e auditando fábricas no Brasil e exterior
 					</p>
 				</div>
 				<div class="col">
 					<img class="img-fluid mx-auto d-block" src="assets/mobile/lider_2.png" alt="">
-					<h3>
+					<h3 data-i18n="text11">
 						Maria Goretti V. Ferreira
 					</h3>
-					<p>
-						30 anos trabalhando nas áreas de Microbiologia e
-						Qualidade​.
+					<p data-i18n="text13">
+						Especialista em Microbiologia de Alimentos.
 					</p>
-					<p>
-						Especialista do Laboratório Central - responsável pelo
-						treinamento de Técnicos, Assepsistas e Microbiologistas
-						nas plantas da América Latina.​
+					<p data-i18n="text14">
+						Mais de 35 anos de experiência na Indústria Alimentícia, realizando treinamento de equipes e auditorias em fábricas na América Latina.
 					</p>
 				</div>
 				<div class="col">
 					<img class="img-fluid mx-auto d-block" src="assets/mobile/lider_3.png" alt="">
-					<h3>
+					<h3 data-i18n="text15">
 						Marlene Hernandes
 					</h3>
-					<p>
-						Mais de 30 de experiência em análise Phys Chem e GC/HPLC​.
+					<p data-i18n="text17">
+						Especialista em Gestão e Análises Físico Químicas
 					</p>
-					<p>
-						Coordenador Corporativo de Qualidade na Antarctica, Cintra, Ambev,
-						Brasil Kirin e Heineken – Responsável pelo treinamento de Técnicos,
-						Operadores, Supervisores e gerentes de plantas de todos os sites da
-						América Latina.​
+					<p data-i18n="text18">
+						Mais de 30 anos de experiência na área de Qualidade na indústria de bebidas, gerenciando e treinando equipes em fábricas da América Latina de grandes empresas
 					</p>
 				</div>
-				
+				<div class="col">
+					<img class="img-fluid mx-auto d-block" src="assets/mobile/lider_4.png" alt="">
+					<h3 data-i18n="text19">
+						Bianca Gonçalves Moreira
+					</h3>
+					<p data-i18n="text21">
+						Especialista em Gestão de Qualidade em Bebidas e Vidros
+					</p>
+					<p data-i18n="text22">
+						23 anos de experiência atuando na implantação de programas de Excelência em Qualidade (ISO 9001:2000 ) em Laboratórios estratégicos na área Físico Química.
+					</p>
+				</div>
 			</div>
 			<div>
 				<img class="img-fluid mx-auto d-block mosaico" src="assets/mobile/2.png" alt="">
@@ -223,7 +244,7 @@
 			<div class="row row-cols-2">
 				<div class="col d-flex align-items-center">
 					<div class="text-atua">
-						<h2>
+						<h2 data-i18n="text36">
 							Ajudamos <span>empresas</span><br>
 							nas seguintes areas!
 						</h2>
@@ -232,38 +253,38 @@
 				<div class="row row-cols-1">
 					<div class="col">
 						<p>
-							<span class="border border-2 rounded-pill caixa border-success">
-								<a href="index.html#corp">
+							<a href="#corp" data-i18n="text37">
+								<span class="border border-2 rounded-pill caixa border-success">
 									Corporativo
-								</a>
-							</span>
+								</span>
+							</a>
 						</p>
 					</div>
 					<div class="col mt-4">
 						<p>
-							<span class="border border-2 rounded-pill caixa border-success">
-								<a href="index.html#prod">
+							<a href="#prod" data-i18n="text38">
+								<span class="border border-2 rounded-pill caixa border-success">
 									Produção
-								</a>
-							</span>
+								</span>
+							</a>
 						</p>
 					</div>
 					<div class="col mt-4">
 						<p>
-							<span class="border border-2 rounded-pill caixa border-success">
-								<a href="index.html#lab">
+							<a href="#lab" data-i18n="text39">
+								<span class="border border-2 rounded-pill caixa border-success">
 									Laboratório
-								</a>
-							</span>
+								</span>
+							</a>
 						</p>
 					</div>
 					<div class="col mt-4">
 						<p>
-							<span class="border border-2 rounded-pill caixa border-success">
-								<a href="index.html#pesq">
+							<a href="#pesq" data-i18n="text40">
+								<span class="border border-2 rounded-pill caixa border-success">
 									Pesquisa
-								</a>
-							</span>
+								</span>
+							</a>
 						</p>
 					</div>
 				</div>
@@ -276,14 +297,16 @@
 		<div class="container text-center">
 			<div class="row row-cols-1">
 				<div class="col">
-					<h2>Fale conosco!</h2>
+					<h2 data-i18n="text74">
+						Fale conosco!
+					</h2>
 				</div>
 				<div class="col">
 					<p>
-						<a href="https://api.whatsapp.com/send?phone=5512981345445">
+						<a href="https://api.whatsapp.com/send?phone=5512981345445" data-i18n="text75">
 							(12) 98134 - 5445<br>
 						</a>
-						<a href="malito:cggisell@icloud.com">
+						<a href="malito:cggisell@icloud.com" data-i18n="text76">
 							cggisell@icloud.com
 						</a>
 					</p>
@@ -303,7 +326,9 @@
 				</div>
 				<div class="col d-flex justify-content-center align-items-center como-podemos-ajudar">
 					<span class="border border-2 rounded-pill caixa border-success">
-						<a href="#atua">Como podemos te ajudar</a>
+						<a href="#atua" data-i18n="text77">
+							Como podemos te ajudar
+						</a>
 					</span>
 				</div>
 			</div>
@@ -311,14 +336,6 @@
 	</footer>
 
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script>
-		document.querySelector('#button-menu-open').onclick=()=>{
-			document.querySelector('aside').classList.add('open')
-		}
-
-		document.querySelector('#button-menu-close').onclick=()=>{
-			document.querySelector('aside').classList.remove('open')
-		}
-	</script>
+	<script src="/scripts.js"></script>
 </body>
 </html>
